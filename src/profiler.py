@@ -46,7 +46,7 @@ VALUE_PATTERNS = {
     "card-style numbers": r"^\d{4}[\s-]?\d{4}[\s-]?\d{4}[\s-]?\d{4}$",
 }
 
-DEFAULT_MODEL = "llama3.2"
+DEFAULT_MODEL = "qwen2.5:0.5b"
 DEFAULT_HOST = "http://localhost:11434"
 
 SYSTEM_PROMPT = """You write insights for a data profiling report. You receive a JSON summary that Python already computed.
