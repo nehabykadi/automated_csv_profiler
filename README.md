@@ -24,6 +24,8 @@ python src/profiler.py data/your_file.csv --no-llm
 - Does not support Excel, JSON, databases, etc.
 - The number check on the model output just compares against the summary within rounding so legitimate rewording can be flagged and it cannot check if a claim is reasonable
 - Flags will only be placed on simple value patterns and column names. Just because data is not flagged does not mean it is safe.
+- Default LLM cannot handle large prompts so it timeouts frequently
 
 Data Source Credits:
 https://catalog.data.gov/dataset/supply-chain-greenhouse-gas-emission-factors-v1-3-by-naics-6
+https://www.kaggle.com/datasets/bisheshkhanalcs26/genshin-impact?resource=download
