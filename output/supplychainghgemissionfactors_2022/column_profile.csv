@@ -1,0 +1,9 @@
+Column,Inferred type,Probable role,Non-missing,Missing %,Unique values
+2017 NAICS Code,int64,Identifier-like field,1016,0.0,1016
+2017 NAICS Title,string,Identifier-like field,1016,0.0,1016
+GHG,string,Categorical attribute,1016,0.0,1
+Unit,string,Categorical attribute,1016,0.0,1
+Supply Chain Emission Factors without Margins,float64,Numeric measure,1016,0.0,274
+Margins of Supply Chain Emission Factors,float64,Numeric measure,1016,0.0,69
+Supply Chain Emission Factors with Margins,float64,Numeric measure,1016,0.0,281
+Reference USEEIO Code,mixed (numeric + text),Unknown or mixed type,1016,0.0,386
