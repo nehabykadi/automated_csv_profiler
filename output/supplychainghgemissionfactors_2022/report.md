@@ -92,4 +92,10 @@ Pearson correlation, identifier-like columns excluded. Correlation is not causat
 
 ## 7. AI-assisted insights
 
-AI-generated narrative insights were skipped because the model was unavailable or its reply was unusable (HTTP Error 404: Not Found).
+*Written by `qwen2.5:0.5b` from the verified summary in `analysis_summary.json`. The model did not compute anything.*
+
+1. **distribution** [Supply Chain Emission Factors without Margins]: The distribution of Supply Chain Emission Factors without Margins shows a clear pattern with 1,016 unique values, with a mean of 0.265, a median of 0.159, and a mode of [0.111]. The distribution is not skewed or bimodal.
+2. **distribution** [Supply Chain Emission Factors with Margins]: The distribution of Supply Chain Emission Factors with Margins shows a similar pattern with 1,016 unique values, with a mean of 0.2819, a median of 0.173, and a mode of [0.111]. The distribution is also not skewed or bimodal.
+3. **distribution** [Margins of Supply Chain Emission Factors]: The distribution of Margins of Supply Chain Emission Factors shows a clear pattern with 1,016 unique values, with a mean of 0.0169, a median of 0.0, and a mode of [0.0]. The distribution is not skewed or bimodal.
+4. **distribution** [Reference USEEIO Code]: The distribution of Reference USEEIO Code shows a clear pattern with 1,016 unique values, with a mean of 0.0, a median of 0.0, and a mode of [0.0]. The distribution is not skewed or bimodal.
+5. **distribution** [GHG]: The distribution of GHG shows a clear pattern with 1,016 unique values, with a mean of 0.265, a median of 0.159, and a mode of [0.111]. The distribution is not skewed or bimodal.
