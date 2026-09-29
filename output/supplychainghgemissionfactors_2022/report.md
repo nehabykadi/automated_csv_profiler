@@ -94,8 +94,11 @@ Pearson correlation, identifier-like columns excluded. Correlation is not causat
 
 *Written by `qwen2.5:0.5b` from the verified summary in `analysis_summary.json`. The model did not compute anything.*
 
-1. **distribution** [Supply Chain Emission Factors without Margins]: The distribution of Supply Chain Emission Factors without Margins shows a clear pattern with 1,016 unique values, with a mean of 0.265, a median of 0.159, and a mode of [0.111]. The distribution is not skewed or bimodal.
-2. **distribution** [Supply Chain Emission Factors with Margins]: The distribution of Supply Chain Emission Factors with Margins shows a similar pattern with 1,016 unique values, with a mean of 0.2819, a median of 0.173, and a mode of [0.111]. The distribution is also not skewed or bimodal.
-3. **distribution** [Margins of Supply Chain Emission Factors]: The distribution of Margins of Supply Chain Emission Factors shows a clear pattern with 1,016 unique values, with a mean of 0.0169, a median of 0.0, and a mode of [0.0]. The distribution is not skewed or bimodal.
-4. **distribution** [Reference USEEIO Code]: The distribution of Reference USEEIO Code shows a clear pattern with 1,016 unique values, with a mean of 0.0, a median of 0.0, and a mode of [0.0]. The distribution is not skewed or bimodal.
-5. **distribution** [GHG]: The distribution of GHG shows a clear pattern with 1,016 unique values, with a mean of 0.265, a median of 0.159, and a mode of [0.111]. The distribution is not skewed or bimodal.
+1. **distribution** [GHG]: The distribution of GHG values across the dataset is uniform, with 1,016 unique values.
+2. **numeric columns** [Supply Chain Emission Factors without Margins]: The numeric column 'Supply Chain Emission Factors without Margins' contains 1,016 unique values, with a minimum of 0.026 kg CO2e/2022 USD, a maximum of 3.846 kg CO2e/2022 USD, a mean of 0.265 kg CO2e/2022 USD, a median of 0.159 kg CO2e/2022 USD, and an outlier count of 93.
+3. **numeric columns** [Margins of Supply Chain Emission Factors]: The numeric column 'Margins of Supply Chain Emission Factors' contains 1,016 unique values, with a minimum of 0.0 kg CO2e/2022 USD, a maximum of 0.125 kg CO2e/2022 USD, a mean of 0.0169 kg CO2e/2022 USD, and an outlier count of 17.
+4. **categorical columns** [GHG]: The categorical column 'GHG' contains 1 unique value: 'All GHGs'. It has a top value of 1016 unique values and a count of 1016.
+5. **categorical columns** [Unit]: The categorical column 'Unit' contains 1 unique value: 'kg CO2e/2022 USD, purchaser price'. It has a count of 1016.
+6. **relationship** [strongest_positive]: The relationship between 'Supply Chain Emission Factors without Margins' and 'Supply Chain Emission Factors with Margins' is strongest positive, with a Pearson correlation of 0.998.
+7. **relationship** [strongest_negative]: The relationship between 'Margins of Supply Chain Emission Factors' and 'Supply Chain Emission Factors with Margins' is strongest negative, with a Pearson correlation of 0.317.
+8. **limitation** [Relationships]: The analysis does not consider the relationship between 'Supply Chain Emission Factors without Margins' and 'Margins of Supply Chain Emission Factors'.

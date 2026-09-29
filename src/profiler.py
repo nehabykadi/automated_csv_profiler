@@ -48,6 +48,7 @@ VALUE_PATTERNS = {
 
 DEFAULT_MODEL = "qwen2.5:0.5b"
 DEFAULT_HOST = "http://localhost:11434"
+LLM_CHAR_LIMIT = 4000 
 
 SYSTEM_PROMPT = """You write insights for a data profiling report. You receive a JSON summary that Python already computed.
 Rules:
@@ -356,6 +357,25 @@ def unverified_numbers(text, summary_text):
             bad.append(m)
     return bad
 
+def compact_for_llm(summary, limit=LLM_CHAR_LIMIT):
+    s = json.loads(json.dumps(summary, default=str))
+    s.pop("columns", None)
+    s.pop("plots_skipped", None)
+    keep = ("valid_count", "missing_pct", "min", "max", "mean", "median",
+            "outlier_count", "outlier_pct")
+    n_num, n_cat, n_find = 12, 8, 20
+    while True:
+        s["numeric_columns"] = {c: {k: v[k] for k in keep}
+                                for c, v in list(summary["numeric_columns"].items())[:n_num]}
+        s["categorical_columns"] = {c: {"unique": v["unique"], "top": v["top"][:3]}
+                                    for c, v in list(summary["categorical_columns"].items())[:n_cat]}
+        s["data_quality"] = {**summary["data_quality"],
+                             "findings": summary["data_quality"]["findings"][:n_find]}
+        text = json.dumps(s, default=str)
+        if len(text) <= limit or (n_num, n_cat, n_find) == (2, 2, 5):
+            return text
+        n_num, n_cat, n_find = max(2, n_num - 2), max(2, n_cat - 2), max(5, n_find - 3)
+
 
 # ---------- report helpers ----------
 
@@ -457,13 +477,8 @@ def generate_profile(csv_path, output_dir="output", use_llm=True, model=DEFAULT_
         "analyses_skipped": analyses_skipped,
         "plots_skipped": plots_skipped,
     }
-    summary_text = json.dumps(summary, default=str)
-    if len(summary_text) > 24000:  # keep it inside the model's context window
-        summary.pop("columns")
-        summary["note"] = "Per-column overview omitted for size; see column_profile.csv."
-        summary_text = json.dumps(summary, default=str)
     (out / "analysis_summary.json").write_text(json.dumps(summary, indent=2, default=str), encoding="utf-8")
-
+    summary_text = compact_for_llm(summary)
     # AI narrative (Python numbers only, model just writes them up)
     insights, llm_note = [], None
     (out / "llm_prompt.txt").write_text(f"{SYSTEM_PROMPT}\n\n--- VERIFIED SUMMARY (JSON) ---\n{summary_text}", encoding="utf-8")

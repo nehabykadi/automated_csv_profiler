@@ -235,4 +235,13 @@ Pearson correlation, identifier-like columns excluded. Correlation is not causat
 
 ## 7. AI-assisted insights
 
-AI-generated narrative insights were skipped because the model was unavailable or its reply was unusable (timed out).
+*Written by `llama3.2:1b-instruct-q4_K_M` from the verified summary in `analysis_summary.json`. The model did not compute anything.*
+
+1. **data quality** [duplicate_rows]: 103 unique values; excluded from correlations
+2. **distribution** [duplicate_rate]: values resemble phone-style numbers
+3. **numeric columns** [days_since_release]: 1136.9709
+4. **numeric columns** [rarity]: 96 distinct categories
+5. **categorical columns** [weapon]: Catalyst: 24 unique values; Sword: 22 unique values; Polearm: 21 unique values
+6. **categorical columns** [element]: Electro: 17 unique values; Anemo: 16 unique values; Cryo: 16 unique values
+7. **relationships** [strongest_positive]: strongest positive correlation is strongest_positive: days_since_release: 1.0
+8. **analyses skipped** [constellation_5_pull]: constellation_5_pull: 6 unique values; 6 analyses skipped
