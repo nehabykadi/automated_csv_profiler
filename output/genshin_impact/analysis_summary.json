@@ -1,0 +1,908 @@
+{
+  "dataset": {
+    "filename": "genshin_impact.csv",
+    "rows": 103,
+    "columns": 32
+  },
+  "columns": [
+    {
+      "name": "Unnamed: 0",
+      "type": "int64",
+      "role": "Identifier-like field",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 103
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "role": "Identifier-like field",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 103
+    },
+    {
+      "name": "rarity",
+      "type": "int64",
+      "role": "Numeric measure",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 2
+    },
+    {
+      "name": "weapon",
+      "type": "string",
+      "role": "Categorical attribute",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 5
+    },
+    {
+      "name": "element",
+      "type": "string",
+      "role": "Categorical attribute",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 7
+    },
+    {
+      "name": "3D-model",
+      "type": "string",
+      "role": "Categorical attribute",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 5
+    },
+    {
+      "name": "region",
+      "type": "string",
+      "role": "Categorical attribute",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 9
+    },
+    {
+      "name": "release_date",
+      "type": "datetime",
+      "role": "Date-like field",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 64
+    },
+    {
+      "name": "days_since_release",
+      "type": "int64",
+      "role": "Numeric measure",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 64
+    },
+    {
+      "name": "banner_versions",
+      "type": "string",
+      "role": "Categorical attribute",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 96
+    },
+    {
+      "name": "banner_dates",
+      "type": "string",
+      "role": "Free-text field",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 97
+    },
+    {
+      "name": "roles",
+      "type": "string",
+      "role": "Categorical attribute",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 12
+    },
+    {
+      "name": "constellation_0_pull",
+      "type": "int64",
+      "role": "Numeric measure",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 103
+    },
+    {
+      "name": "constellation_1_pull",
+      "type": "int64",
+      "role": "Numeric measure",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 103
+    },
+    {
+      "name": "constellation_2_pull",
+      "type": "int64",
+      "role": "Numeric measure",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 103
+    },
+    {
+      "name": "constellation_3_pull",
+      "type": "int64",
+      "role": "Numeric measure",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 103
+    },
+    {
+      "name": "constellation_4_pull",
+      "type": "int64",
+      "role": "Numeric measure",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 96
+    },
+    {
+      "name": "constellation_5_pull",
+      "type": "int64",
+      "role": "Numeric measure",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 97
+    },
+    {
+      "name": "constellation_6_pull",
+      "type": "int64",
+      "role": "Numeric measure",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 101
+    },
+    {
+      "name": "constellation_7_pull",
+      "type": "int64",
+      "role": "Numeric measure",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 98
+    },
+    {
+      "name": "asc_stat_bonus_category",
+      "type": "string",
+      "role": "Categorical attribute",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 16
+    },
+    {
+      "name": "lvl_90_HP",
+      "type": "int64",
+      "role": "Numeric measure",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 66
+    },
+    {
+      "name": "lvl_90_ATK",
+      "type": "int64",
+      "role": "Numeric measure",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 60
+    },
+    {
+      "name": "lvl_90_DEF",
+      "type": "int64",
+      "role": "Numeric measure",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 66
+    },
+    {
+      "name": "duplicate_rate",
+      "type": "float64",
+      "role": "Numeric measure",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 103
+    },
+    {
+      "name": "c6_rate",
+      "type": "float64",
+      "role": "Numeric measure",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 103
+    },
+    {
+      "name": "avg_copies_per_player",
+      "type": "float64",
+      "role": "Numeric measure",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 103
+    },
+    {
+      "name": "num_banners",
+      "type": "int64",
+      "role": "Numeric measure",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 15
+    },
+    {
+      "name": "months_since_release",
+      "type": "float64",
+      "role": "Numeric measure",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 64
+    },
+    {
+      "name": "is_standard_banner",
+      "type": "boolean",
+      "role": "Boolean field",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 2
+    },
+    {
+      "name": "is_archon",
+      "type": "boolean",
+      "role": "Boolean field",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 2
+    },
+    {
+      "name": "pulled_count",
+      "type": "int64",
+      "role": "Numeric measure",
+      "non_missing": 103,
+      "missing_pct": 0.0,
+      "unique": 103
+    }
+  ],
+  "data_quality": {
+    "duplicate_rows": 0,
+    "high_missing_threshold_pct": 30,
+    "findings": [
+      {
+        "check": "identifier-like",
+        "column": "Unnamed: 0",
+        "detail": "103 unique values; excluded from correlations"
+      },
+      {
+        "check": "identifier-like",
+        "column": "name",
+        "detail": "103 unique values; excluded from correlations"
+      },
+      {
+        "check": "high cardinality",
+        "column": "banner_versions",
+        "detail": "96 distinct categories"
+      },
+      {
+        "check": "possibly sensitive",
+        "column": "duplicate_rate",
+        "detail": "values resemble phone-style numbers"
+      }
+    ],
+    "note": "Sensitive-data flags are heuristics; no flag does not mean the data is safe."
+  },
+  "numeric_columns": {
+    "rarity": {
+      "valid_count": 103,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 4.0,
+      "max": 5.0,
+      "mean": 4.5631,
+      "median": 5.0,
+      "mode": [
+        5.0
+      ],
+      "std": 0.4984,
+      "q1": 4.0,
+      "q3": 5.0,
+      "iqr": 1.0,
+      "outlier_count": 0,
+      "outlier_pct": 0.0
+    },
+    "days_since_release": {
+      "valid_count": 103,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 32.0,
+      "max": 1924.0,
+      "mean": 1136.9709,
+      "median": 1178.0,
+      "mode": [
+        1924.0
+      ],
+      "std": 622.3255,
+      "q1": 578.0,
+      "q3": 1751.5,
+      "iqr": 1173.5,
+      "outlier_count": 0,
+      "outlier_pct": 0.0
+    },
+    "constellation_0_pull": {
+      "valid_count": 103,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 15318.0,
+      "max": 1775083.0,
+      "mean": 533782.466,
+      "median": 318448.0,
+      "mode": null,
+      "std": 492771.3842,
+      "q1": 159055.0,
+      "q3": 788685.5,
+      "iqr": 629630.5,
+      "outlier_count": 1,
+      "outlier_pct": 0.97
+    },
+    "constellation_1_pull": {
+      "valid_count": 103,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 866.0,
+      "max": 1581770.0,
+      "mean": 294590.2718,
+      "median": 69352.0,
+      "mode": null,
+      "std": 418771.2805,
+      "q1": 22159.0,
+      "q3": 446541.0,
+      "iqr": 424382.0,
+      "outlier_count": 9,
+      "outlier_pct": 8.74
+    },
+    "constellation_2_pull": {
+      "valid_count": 103,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 252.0,
+      "max": 1213152.0,
+      "mean": 221787.5243,
+      "median": 30198.0,
+      "mode": null,
+      "std": 325604.4577,
+      "q1": 7525.5,
+      "q3": 325993.5,
+      "iqr": 318468.0,
+      "outlier_count": 10,
+      "outlier_pct": 9.71
+    },
+    "constellation_3_pull": {
+      "valid_count": 103,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 68.0,
+      "max": 839452.0,
+      "mean": 147776.8932,
+      "median": 9124.0,
+      "mode": null,
+      "std": 223934.6981,
+      "q1": 1854.0,
+      "q3": 229594.0,
+      "iqr": 227740.0,
+      "outlier_count": 10,
+      "outlier_pct": 9.71
+    },
+    "constellation_4_pull": {
+      "valid_count": 103,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 35.0,
+      "max": 562730.0,
+      "mean": 96946.2621,
+      "median": 4105.0,
+      "mode": [
+        65.0
+      ],
+      "std": 147372.2608,
+      "q1": 772.5,
+      "q3": 157910.0,
+      "iqr": 157137.5,
+      "outlier_count": 7,
+      "outlier_pct": 6.8
+    },
+    "constellation_5_pull": {
+      "valid_count": 103,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 12.0,
+      "max": 382812.0,
+      "mean": 64379.6505,
+      "median": 3780.0,
+      "mode": null,
+      "std": 96980.6023,
+      "q1": 573.0,
+      "q3": 109344.0,
+      "iqr": 108771.0,
+      "outlier_count": 6,
+      "outlier_pct": 5.83
+    },
+    "constellation_6_pull": {
+      "valid_count": 103,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 21.0,
+      "max": 261968.0,
+      "mean": 50187.2136,
+      "median": 16373.0,
+      "mode": [
+        21.0,
+        3913.0
+      ],
+      "std": 65212.4654,
+      "q1": 4970.0,
+      "q3": 84416.5,
+      "iqr": 79446.5,
+      "outlier_count": 5,
+      "outlier_pct": 4.85
+    },
+    "constellation_7_pull": {
+      "valid_count": 103,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 8.0,
+      "max": 1042197.0,
+      "mean": 152643.0097,
+      "median": 587.0,
+      "mode": null,
+      "std": 237282.0215,
+      "q1": 154.5,
+      "q3": 235137.5,
+      "iqr": 234983.0,
+      "outlier_count": 7,
+      "outlier_pct": 6.8
+    },
+    "lvl_90_HP": {
+      "valid_count": 103,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 9189.0,
+      "max": 15675.0,
+      "mean": 11905.0777,
+      "median": 12289.0,
+      "mode": [
+        13348.0
+      ],
+      "std": 1621.5641,
+      "q1": 10470.0,
+      "q3": 12968.5,
+      "iqr": 2498.5,
+      "outlier_count": 0,
+      "outlier_pct": 0.0
+    },
+    "lvl_90_ATK": {
+      "valid_count": 103,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 106.0,
+      "max": 359.0,
+      "mean": 259.7864,
+      "median": 244.0,
+      "mode": [
+        212.0,
+        223.0,
+        244.0
+      ],
+      "std": 60.5821,
+      "q1": 213.5,
+      "q3": 320.5,
+      "iqr": 107.0,
+      "outlier_count": 0,
+      "outlier_pct": 0.0
+    },
+    "lvl_90_DEF": {
+      "valid_count": 103,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 500.0,
+      "max": 959.0,
+      "mean": 704.7573,
+      "median": 712.0,
+      "mode": [
+        751.0
+      ],
+      "std": 103.4497,
+      "q1": 615.0,
+      "q3": 784.0,
+      "iqr": 169.0,
+      "outlier_count": 0,
+      "outlier_pct": 0.0
+    },
+    "duplicate_rate": {
+      "valid_count": 103,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 0.0369,
+      "max": 0.8745,
+      "mean": 0.4421,
+      "median": 0.3384,
+      "mode": null,
+      "std": 0.2829,
+      "q1": 0.193,
+      "q3": 0.7445,
+      "iqr": 0.5514,
+      "outlier_count": 0,
+      "outlier_pct": 0.0
+    },
+    "c6_rate": {
+      "valid_count": 103,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 0.0,
+      "max": 0.1379,
+      "mean": 0.0338,
+      "median": 0.033,
+      "mode": null,
+      "std": 0.0209,
+      "q1": 0.0237,
+      "q3": 0.0422,
+      "iqr": 0.0184,
+      "outlier_count": 5,
+      "outlier_pct": 4.85
+    },
+    "avg_copies_per_player": {
+      "valid_count": 103,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 1.0383,
+      "max": 7.9703,
+      "mean": 2.5425,
+      "median": 1.5114,
+      "mode": null,
+      "std": 1.6122,
+      "q1": 1.2393,
+      "q3": 3.9132,
+      "iqr": 2.6739,
+      "outlier_count": 1,
+      "outlier_pct": 0.97
+    },
+    "num_banners": {
+      "valid_count": 103,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 1.0,
+      "max": 16.0,
+      "mean": 4.835,
+      "median": 4.0,
+      "mode": [
+        2.0
+      ],
+      "std": 3.4869,
+      "q1": 2.0,
+      "q3": 6.0,
+      "iqr": 4.0,
+      "outlier_count": 4,
+      "outlier_pct": 3.88
+    },
+    "months_since_release": {
+      "valid_count": 103,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 1.0492,
+      "max": 63.082,
+      "mean": 37.2777,
+      "median": 38.623,
+      "mode": [
+        63.082
+      ],
+      "std": 20.4041,
+      "q1": 18.9508,
+      "q3": 57.4262,
+      "iqr": 38.4754,
+      "outlier_count": 0,
+      "outlier_pct": 0.0
+    },
+    "pulled_count": {
+      "valid_count": 103,
+      "missing_count": 0,
+      "missing_pct": 0.0,
+      "min": 16854.0,
+      "max": 7659164.0,
+      "mean": 1562093.165,
+      "median": 652085.0,
+      "mode": null,
+      "std": 1921421.9542,
+      "q1": 224798.0,
+      "q3": 2261590.5,
+      "iqr": 2036792.5,
+      "outlier_count": 9,
+      "outlier_pct": 8.74
+    }
+  },
+  "categorical_columns": {
+    "weapon": {
+      "unique": 5,
+      "top": [
+        {
+          "value": "Catalyst",
+          "count": 24,
+          "pct": 23.3
+        },
+        {
+          "value": "Sword",
+          "count": 22,
+          "pct": 21.36
+        },
+        {
+          "value": "Polearm",
+          "count": 21,
+          "pct": 20.39
+        },
+        {
+          "value": "Claymore",
+          "count": 18,
+          "pct": 17.48
+        },
+        {
+          "value": "Bow",
+          "count": 18,
+          "pct": 17.48
+        }
+      ]
+    },
+    "element": {
+      "unique": 7,
+      "top": [
+        {
+          "value": "Electro",
+          "count": 17,
+          "pct": 16.5
+        },
+        {
+          "value": "Anemo",
+          "count": 16,
+          "pct": 15.53
+        },
+        {
+          "value": "Cryo",
+          "count": 16,
+          "pct": 15.53
+        },
+        {
+          "value": "Pyro",
+          "count": 16,
+          "pct": 15.53
+        },
+        {
+          "value": "Hydro",
+          "count": 15,
+          "pct": 14.56
+        }
+      ]
+    },
+    "3D-model": {
+      "unique": 5,
+      "top": [
+        {
+          "value": "Medium Female",
+          "count": 36,
+          "pct": 34.95
+        },
+        {
+          "value": "Medium Male",
+          "count": 21,
+          "pct": 20.39
+        },
+        {
+          "value": "Tall Female",
+          "count": 21,
+          "pct": 20.39
+        },
+        {
+          "value": "Tall Male",
+          "count": 14,
+          "pct": 13.59
+        },
+        {
+          "value": "Short Female",
+          "count": 11,
+          "pct": 10.68
+        }
+      ]
+    },
+    "region": {
+      "unique": 9,
+      "top": [
+        {
+          "value": "Liyue",
+          "count": 21,
+          "pct": 20.39
+        },
+        {
+          "value": "Mondstadt",
+          "count": 18,
+          "pct": 17.48
+        },
+        {
+          "value": "Inazuma",
+          "count": 17,
+          "pct": 16.5
+        },
+        {
+          "value": "Sumeru",
+          "count": 14,
+          "pct": 13.59
+        },
+        {
+          "value": "Fontaine",
+          "count": 13,
+          "pct": 12.62
+        }
+      ]
+    },
+    "banner_versions": {
+      "unique": 96,
+      "top": [
+        {
+          "value": "['4.5']",
+          "count": 3,
+          "pct": 2.91
+        },
+        {
+          "value": "['Luna I']",
+          "count": 3,
+          "pct": 2.91
+        },
+        {
+          "value": "['2.1', '2.5', '3.3', '4.3', '5.0', '5.6']",
+          "count": 2,
+          "pct": 1.94
+        },
+        {
+          "value": "['5.7']",
+          "count": 2,
+          "pct": 1.94
+        },
+        {
+          "value": "['Luna III']",
+          "count": 2,
+          "pct": 1.94
+        }
+      ]
+    },
+    "roles": {
+      "unique": 12,
+      "top": [
+        {
+          "value": "On-Field,DPS",
+          "count": 37,
+          "pct": 35.92
+        },
+        {
+          "value": "Off-Field,Survivability",
+          "count": 14,
+          "pct": 13.59
+        },
+        {
+          "value": "Off-Field,DPS",
+          "count": 13,
+          "pct": 12.62
+        },
+        {
+          "value": "Off-Field,Support,Survivability",
+          "count": 12,
+          "pct": 11.65
+        },
+        {
+          "value": "Off-Field,Support",
+          "count": 10,
+          "pct": 9.71
+        }
+      ]
+    },
+    "asc_stat_bonus_category": {
+      "unique": 16,
+      "top": [
+        {
+          "value": "CRIT DMG",
+          "count": 18,
+          "pct": 17.48
+        },
+        {
+          "value": "ATK%",
+          "count": 17,
+          "pct": 16.5
+        },
+        {
+          "value": "CRIT Rate",
+          "count": 16,
+          "pct": 15.53
+        },
+        {
+          "value": "HP%",
+          "count": 14,
+          "pct": 13.59
+        },
+        {
+          "value": "Elemental Mastery",
+          "count": 11,
+          "pct": 10.68
+        }
+      ]
+    },
+    "is_standard_banner": {
+      "unique": 2,
+      "top": [
+        {
+          "value": "1",
+          "count": 53,
+          "pct": 51.46
+        },
+        {
+          "value": "0",
+          "count": 50,
+          "pct": 48.54
+        }
+      ]
+    },
+    "is_archon": {
+      "unique": 2,
+      "top": [
+        {
+          "value": "0",
+          "count": 97,
+          "pct": 94.17
+        },
+        {
+          "value": "1",
+          "count": 6,
+          "pct": 5.83
+        }
+      ]
+    }
+  },
+  "relationships": {
+    "strongest_positive": [
+      {
+        "a": "days_since_release",
+        "b": "months_since_release",
+        "r": 1.0,
+        "n": 103
+      },
+      {
+        "a": "constellation_2_pull",
+        "b": "constellation_3_pull",
+        "r": 0.998,
+        "n": 103
+      },
+      {
+        "a": "constellation_3_pull",
+        "b": "constellation_4_pull",
+        "r": 0.998,
+        "n": 103
+      }
+    ],
+    "strongest_negative": [
+      {
+        "a": "rarity",
+        "b": "duplicate_rate",
+        "r": -0.956,
+        "n": 103
+      },
+      {
+        "a": "rarity",
+        "b": "avg_copies_per_player",
+        "r": -0.894,
+        "n": 103
+      },
+      {
+        "a": "rarity",
+        "b": "constellation_5_pull",
+        "r": -0.739,
+        "n": 103
+      }
+    ],
+    "note": "Pearson r on rows where both values exist; not causal."
+  },
+  "analyses_skipped": {},
+  "plots_skipped": {
+    "missing-value bar chart": "no missing values"
+  }
+}

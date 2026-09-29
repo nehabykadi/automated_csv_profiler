@@ -1,0 +1,33 @@
+Column,Inferred type,Probable role,Non-missing,Missing %,Unique values
+Unnamed: 0,int64,Identifier-like field,103,0.0,103
+name,string,Identifier-like field,103,0.0,103
+rarity,int64,Numeric measure,103,0.0,2
+weapon,string,Categorical attribute,103,0.0,5
+element,string,Categorical attribute,103,0.0,7
+3D-model,string,Categorical attribute,103,0.0,5
+region,string,Categorical attribute,103,0.0,9
+release_date,datetime,Date-like field,103,0.0,64
+days_since_release,int64,Numeric measure,103,0.0,64
+banner_versions,string,Categorical attribute,103,0.0,96
+banner_dates,string,Free-text field,103,0.0,97
+roles,string,Categorical attribute,103,0.0,12
+constellation_0_pull,int64,Numeric measure,103,0.0,103
+constellation_1_pull,int64,Numeric measure,103,0.0,103
+constellation_2_pull,int64,Numeric measure,103,0.0,103
+constellation_3_pull,int64,Numeric measure,103,0.0,103
+constellation_4_pull,int64,Numeric measure,103,0.0,96
+constellation_5_pull,int64,Numeric measure,103,0.0,97
+constellation_6_pull,int64,Numeric measure,103,0.0,101
+constellation_7_pull,int64,Numeric measure,103,0.0,98
+asc_stat_bonus_category,string,Categorical attribute,103,0.0,16
+lvl_90_HP,int64,Numeric measure,103,0.0,66
+lvl_90_ATK,int64,Numeric measure,103,0.0,60
+lvl_90_DEF,int64,Numeric measure,103,0.0,66
+duplicate_rate,float64,Numeric measure,103,0.0,103
+c6_rate,float64,Numeric measure,103,0.0,103
+avg_copies_per_player,float64,Numeric measure,103,0.0,103
+num_banners,int64,Numeric measure,103,0.0,15
+months_since_release,float64,Numeric measure,103,0.0,64
+is_standard_banner,boolean,Boolean field,103,0.0,2
+is_archon,boolean,Boolean field,103,0.0,2
+pulled_count,int64,Numeric measure,103,0.0,103

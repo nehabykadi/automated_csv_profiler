@@ -1,0 +1,14 @@
+Column,Inferred type,Probable role,Non-missing,Missing %,Unique values
+Index,int64,Identifier-like field,10000,0.0,10000
+Name,string,Categorical attribute,10000,0.0,7896
+Description,string,Identifier-like field,10000,0.0,10000
+Brand,string,Categorical attribute,10000,0.0,9241
+Category,string,Categorical attribute,10000,0.0,34
+Price,int64,Numeric measure,10000,0.0,999
+Currency,string,Categorical attribute,10000,0.0,1
+Stock,int64,Numeric measure,10000,0.0,999
+EAN,string,Identifier-like field,10000,0.0,10000
+Color,string,Categorical attribute,10000,0.0,140
+Size,string,Categorical attribute,10000,0.0,18
+Availability,string,Categorical attribute,10000,0.0,6
+Internal ID,int64,Numeric measure,10000,0.0,99
